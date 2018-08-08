@@ -8,5 +8,9 @@ namespace DAL
 {
     public class EmployeeDal
     {
+        public Employee GetEmployeeById(string employeeId);
+        public Emplpyee GetEmployeeByName(string employeName);
+        public string GetEmployeePositionById(string employeeId);
+        public int GetEmployeeCount();
     }
 }
