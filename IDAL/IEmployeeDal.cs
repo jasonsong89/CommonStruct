@@ -1,4 +1,4 @@
-﻿using Model;
+﻿using Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace IDAL
 {
-    public interface IEmployeeDal
+    public class IEmployeeDal
     {
-        Employee GetEmployeeById(string employeeId);
-        Employee GetEmployeeByName(string employeName);
-        string GetEmployeePositionById(string employeeId);
-        int GetEmployeeCount();
+
     }
 }
