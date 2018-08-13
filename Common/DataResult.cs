@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Common
 {
+    public interface IDataResult
+    {
+
+    }
     /// <summary>
     /// 操作数据库结果实体
     /// </summary>

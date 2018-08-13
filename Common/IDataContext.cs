@@ -9,30 +9,17 @@ namespace Common
 
     public interface IDataContext
     {
-
-        #region 通用方法
-
-        #region 新增
         T Add<T>(T item) where T : class, IDataEntity, new();
         IList<T> Add<T>(List<T> itemList) where T : class, IDataEntity, new();
-        #endregion
-
-        #region 更新
+    
         T Update<T>(T item) where T : class, IDataEntity, new();
         List<T> Update<T>(List<T> itemList) where T : class, IDataEntity, new();
-        #endregion
-
-        #region 删除
+      
         bool Delete<T>(List<T> itemList) where T : class, IDataEntity, new();
         bool Delete<T>(T item) where T : class, IDataEntity, new();
-        #endregion
-
-        #region 查询
+      
         IList<T> Query<T>(IQuery queryCondition) where T : class, IDataEntity, new();
-        IList<T> Query<T>(IQuery queryCondition, int pageIndex, int pageCount) where T : class, IDataEntity, new();
-        #endregion
-
-        #endregion
+        IList<T> Query<T>(IQuery queryCondition, int pageIndex, int pageCount) where T : class, IDataEntity, new();  
     }
 
     public interface IDataEntityContent : IDataContext
@@ -56,5 +43,6 @@ namespace Common
 
     public interface IDataTableContent : IDataContext
     {
+
     }
 }

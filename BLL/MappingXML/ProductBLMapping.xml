@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessModel name="ProductBL" >
+  <property name="ProductName" mappingTo="DAL.ProductEntityName" type="System.String"/>
+  <property name="Price" mappingTo="DAL.ProductEntityPrice" type="System.Decimal"/>
+  <property name="Description" mappingTo="DAL.ProductEntityDescription" type="System.String"/>
+  <property name="CustomerName" mappingTo="DAL.CustomerEntity.Name" type="System.String"/>
+</BusinessModel>

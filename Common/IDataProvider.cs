@@ -28,5 +28,7 @@ namespace Common
         //DataResult<TEntity> GetList<TEntity>(ICriteria condition) where TEntity : IDataEntity;
         //DataResult<TEntity> GetPageData<TEntity>(ICriteria condition, int pageIndex, int pageSize, ref int entityCount) where TEntity : IDataEntity;
         //List<object> GetCustomData(ICriteria condiftion);
+
     }
+
 }
